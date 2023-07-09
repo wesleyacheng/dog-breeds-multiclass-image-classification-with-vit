@@ -1,8 +1,10 @@
 # dog-breeds-multiclass-image-classification-with-vit
 Dog Breeds MultiClass Image Classification with ViT
 
+Notebook first posted in my [Kaggle](https://www.kaggle.com/wesleyacheng/dog-breeds-multiclass-image-classification-w-vit).
+
 # Model Motivation
-Recently, someone asked me if you can classify dog images into their respective dog breeds instead just differentiating from cats vs dogs like my last [notebook](https://www.kaggle.com/code/wesleyacheng/cat-vs-dog-image-classification-with-cnns). I say **YES**!
+Recently, someone asked me if you can classify dog images into their respective dog breeds instead just differentiating from cats vs dogs like my [last notebook](https://www.kaggle.com/code/wesleyacheng/cat-vs-dog-image-classification-with-cnns). I say **YES**!
 
 Due to the complexity of the problem, we will be using the most advanced computer vision architecture released in the [2020 Google paper](https://arxiv.org/pdf/2010.11929v2.pdf), the [**Vision Transformer**](https://paperswithcode.com/methods/category/vision-transformer).
 
