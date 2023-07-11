@@ -8,11 +8,11 @@ Recently, someone asked me if you can classify dog images into their respective 
 
 Due to the complexity of the problem, we will be using the most advanced computer vision architecture released in the [2020 Google paper](https://arxiv.org/pdf/2010.11929v2.pdf), the [**Vision Transformer**](https://paperswithcode.com/methods/category/vision-transformer).
 
-![vision-transformer](https://github.com/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit/assets/15952538/024a52e1-151a-4f43-b9ec-981a6f358839)
+![vision-transformer](https://github.com/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit/assets/15952538/abac87da-7d4d-4394-8487-a324ff0b0e0a)
 
 The difference between the **Vision Transformer** and the traditional **Convolutional Neural Network (CNN)** is how it treats an image. In **Vision Transformers**, we take the input as a patch of the original image, say 16 x 16, and feed in into the Transformer as a sequence with positional embeddings and self-attention, while in the **CNN**, we use the same patch of original image as an input, but use convolutions and pooling layers as inductive biases. What this means is that **Vision Transformer** can use it's judgement to attend any particular patch of the image in a *global* fashion using it's self-attention mechanism without having us to guide the neural network like a **CNN** with *local* centering/cropping/bounding box our images to help its convolutions. 
 
-![self-attention](https://github.com/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit/assets/15952538/df85a48b-e71f-4b99-aa04-6381b150b567)
+![self-attention](https://github.com/wesleyacheng/dog-breeds-multiclass-image-classification-with-vit/assets/15952538/6f26184f-e088-4c2e-bda2-384c0fa423d0)
 
 This allows the **Vision Transformer** architecture to be more flexible and scalable in nature, allowing us to create [foundation models](https://blogs.nvidia.com/blog/2023/03/13/what-are-foundation-models) in computer vision, similar to the NLP foundational models like [BERT](https://paperswithcode.com/method/bert) and [GPT](https://paperswithcode.com/method/gpt), with pre-training self-supervised/supervised on massive amount of image data that would generalize to different computer vision tasks such as *image classification, recognition, segmentation, etc.* This cross-pollination helps us move closer towards the goal of Artificial General Intelligence.
 
@@ -24,7 +24,7 @@ Luckily, in this notebook, we will be using a **Vision Transformer** from [Googl
 This model is finetuned using the [Google Vision Transformer (vit-base-patch16-224-in21k)](https://huggingface.co/google/vit-base-patch16-224-in21k) on the [Stanford Dogs dataset in Kaggle](https://www.kaggle.com/datasets/jessicali9530/stanford-dogs-dataset) to classify dog images into 120 dog breeds.
 
 # Intended Uses & Limitations
-You can use this finetuned model to classify dog images to 150 dog breeds limited to those that are in the dataset.
+You can use this finetuned model to classify images of dogs only and dog breeds that are in the dataset.
 
 # How to Use
 ```python
